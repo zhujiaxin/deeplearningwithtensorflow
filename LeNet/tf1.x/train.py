@@ -7,11 +7,15 @@ import os
 import numpy as np
 
 
+train_x, train_y, test_x, test_y = read_mnist.read_mnist(one_hot=True, z_score=True)
+index_train = np.random.permutation(train_x.shape[0])
+train_x, train_y = train_x[index_train], train_y[index_train]
+
 batch_size = 256
 sess = tf.Session()
 model = lenet.LeNet(lr_rate=0.001)
 sess.run(tf.global_variables_initializer())
-tensorboard_dir = r"tensorboardlog/"
+tensorboard_dir = r"tensorboardlog1/"
 if os.path.exists(tensorboard_dir):
     for file in os.listdir(tensorboard_dir):
         path_file = os.path.join(tensorboard_dir, file)
@@ -21,11 +25,9 @@ tf.summary.scalar("loss of test data", model.loss)
 tf.summary.scalar("accuracy on test data", model.accuracy)
 merge = tf.summary.merge_all()
 
-train_x, train_y, test_x, test_y = read_mnist.read_mnist(one_hot=True)
-index_train = np.random.permutation(train_x.shape[0])
-train_x, train_y = train_x[index_train], train_y[index_train]
 
-epochs = 300
+
+epochs = 20
 saver = tf.train.Saver()
 lr_rate = 0.001
 for epoch in range(epochs):
