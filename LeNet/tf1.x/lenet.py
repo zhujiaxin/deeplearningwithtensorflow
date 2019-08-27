@@ -61,8 +61,9 @@ class LeNet(object):
             self.out = tf.matmul(out4, weights3) + bias3_fc
 
         with tf.name_scope('loss'):
+            regulation_loss = tf.nn.l2_loss(weights1) + tf.nn.l2_loss(weights2)  + tf.nn.l2_loss(weights3)
             self.loss = tf.reduce_mean(
-                tf.nn.softmax_cross_entropy_with_logits_v2(labels=self.input_y, logits=self.out))
+                tf.nn.softmax_cross_entropy_with_logits_v2(labels=self.input_y, logits=self.out)) + regulation_loss
 
         self.train_loss_op = tf.train.GradientDescentOptimizer(lr_rate).minimize(self.loss)
 
