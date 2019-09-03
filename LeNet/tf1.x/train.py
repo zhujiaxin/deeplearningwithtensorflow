@@ -7,7 +7,7 @@ import os
 import numpy as np
 
 
-train_x, train_y, test_x, test_y = read_mnist.read_mnist(one_hot=True, z_score=True)
+train_x, train_y, test_x, test_y = read_mnist.read_mnist(one_hot=True, standard=True)
 index_train = np.random.permutation(train_x.shape[0])
 train_x, train_y = train_x[index_train], train_y[index_train]
 
