@@ -23,8 +23,3 @@ def download(url, path):
                       '{:.2f}% '.format(size*100 / content_size), end='')
         end = time.time()
         print('\n download use {:.2f} ms'.format(end-start))
-
-
-
-url = 'http://down.360safe.com/cse/360cse_11.0.2179.0.exe'
-download(url, '1.exe')
