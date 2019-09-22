@@ -7,7 +7,7 @@ import os
 import numpy as np
 
 
-train_x, train_y, test_x, test_y = read_mnist.read_mnist(one_hot=True, standard=True)
+train_x, train_y, test_x, test_y, index2class = read_mnist.read_fashion_mnist(one_hot=True, standard=True)
 index_train = np.random.permutation(train_x.shape[0])
 train_x, train_y = train_x[index_train], train_y[index_train]
 
@@ -16,7 +16,7 @@ batch_size = 64
 sess = tf.Session()
 model = lenet.LeNet(lr_rate=0.001, regular=0.0005, train=True)
 sess.run(tf.global_variables_initializer())
-tensorboard_dir = r"tensorboardlog/"
+tensorboard_dir = r"fashiontensorboardlog/"
 if os.path.exists(tensorboard_dir):
     for file in os.listdir(tensorboard_dir):
         path_file = os.path.join(tensorboard_dir, file)
@@ -50,6 +50,6 @@ for epoch in range(epochs):
     print('{:.0f} epoch use {:.2f} ms'.format(epoch, (time.time()-start)*1000))
     print('loss on test data', model.compute_loss(train_x, train_y, session=sess))
     print('accuracy', model.compute_accuracy(train_x, train_y, session=sess))
-saver.save(sess, r'ckpt/lenet-ckpt', global_step=epoch)
+saver.save(sess, r'fashinckpt/lenet-ckpt', global_step=epoch)
 sess.close()
 

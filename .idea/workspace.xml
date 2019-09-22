@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d4ccacf-28a9-4e7b-854b-8b34a20c1598" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeNet/tf2.0/mymodel.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeNet/tf2.0/train model use tf2.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeNet/tf2.0/lenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeNet/tf2.0/lenet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeNet/tf2.0/trian.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeNet/tf2.0/trian.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeNet/tf1.x/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeNet/tf1.x/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeNet/tf2.0/train model use tf2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/LeNet/tf2.0/train model use tf2.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LeNet/tf2.0/trian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="43" selection-start-line="43" selection-end-line="49" />
+            <state relative-caret-position="204">
+              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
               <folding>
                 <element signature="e#24#47#0" expanded="true" />
               </folding>
@@ -37,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LeNet/tf1.x/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="674">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="e#23#56#0" expanded="true" />
               </folding>
@@ -49,7 +46,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeNet/tf1.x/utils/read_mnist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1026">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="70">
@@ -59,10 +68,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LeNet/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="266">
+                <caret line="13" selection-start-line="13" selection-end-line="13" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LeNet/tf2.0/utils/read_mnist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="38" />
+            <state relative-caret-position="231">
+              <caret line="95" column="55" selection-start-line="95" selection-start-column="45" selection-end-line="95" selection-end-column="55" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -82,11 +103,11 @@
         <option value="$PROJECT_DIR$/AlexNet/tf1.x/utils/downloadmodel.py" />
         <option value="$PROJECT_DIR$/AlexNet/tf1.x/getmodeldata.py" />
         <option value="$PROJECT_DIR$/LeNet/tf1.x/lenet.py" />
-        <option value="$PROJECT_DIR$/LeNet/tf1.x/train.py" />
-        <option value="$PROJECT_DIR$/LeNet/README.md" />
         <option value="$PROJECT_DIR$/LeNet/tf2.0/trian.py" />
         <option value="$PROJECT_DIR$/LeNet/tf2.0/lenet.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/LeNet/README.md" />
+        <option value="$PROJECT_DIR$/LeNet/tf1.x/train.py" />
       </list>
     </option>
   </component>
@@ -123,7 +144,21 @@
               <item name="deeplearningwithtensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="deeplearningwithtensorflow" type="462c0819:PsiDirectoryNode" />
               <item name="LeNet" type="462c0819:PsiDirectoryNode" />
+              <item name="tf1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deeplearningwithtensorflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deeplearningwithtensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="LeNet" type="462c0819:PsiDirectoryNode" />
               <item name="tf2.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deeplearningwithtensorflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deeplearningwithtensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="LeNet" type="462c0819:PsiDirectoryNode" />
+              <item name="tf2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="deeplearningwithtensorflow" type="b2602c69:ProjectViewProjectNode" />
@@ -290,26 +325,39 @@
       <option name="project" value="LOCAL" />
       <updated>1569066321405</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add train model code use jupyter notebook&#10;and upload parameter file">
+      <created>1569160993768</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569160993768</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update readme">
+      <created>1569161149296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1569161149296</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19022457" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19022457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49867898" weight="0.27478755" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980185" visible="true" weight="0.43342775" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49867898" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4980185" visible="true" weight="0.33427763" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5019815" side_tool="true" visible="true" weight="0.33427763" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4980185" weight="0.33427763" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5019815" side_tool="true" weight="0.27478755" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -321,7 +369,9 @@
     <MESSAGE value=" modify lenet model &#10; add Train parameter&#10; add restore model.ipynb to restore model" />
     <MESSAGE value=" modify readme" />
     <MESSAGE value=" upload ckpt" />
-    <option name="LAST_COMMIT_MESSAGE" value=" upload ckpt" />
+    <MESSAGE value="add train model code use jupyter notebook&#10;and upload parameter file" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/AlexNet/tf1.x/downloadmodel.py" />
@@ -377,26 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LeNet/tf1.x/utils/read_mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LeNet/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-27">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../anaconda/envs/tensorflow1.14/Lib/site-packages/tensorflow/python/keras/regularizers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-22">
@@ -404,10 +434,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeNet/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="266">
+            <caret line="13" selection-start-line="13" selection-end-line="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LeNet/tf2.0/utils/read_mnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="231">
+          <caret line="95" column="55" selection-start-line="95" selection-start-column="45" selection-end-line="95" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeNet/tf1.x/utils/read_mnist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -423,8 +480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LeNet/tf2.0/trian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="43" selection-start-line="43" selection-end-line="49" />
+        <state relative-caret-position="204">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
           <folding>
             <element signature="e#24#47#0" expanded="true" />
           </folding>
@@ -433,18 +490,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LeNet/tf1.x/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="674">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="e#23#56#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
