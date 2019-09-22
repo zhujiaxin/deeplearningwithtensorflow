@@ -12,8 +12,10 @@ def model(regular=0.01):
     maxpool2 = tf.keras.layers.MaxPool2D(pool_size=[2, 2], strides=[2, 2])(convlay2)
     flatten = tf.keras.layers.Flatten()(maxpool2)
     fc1 = tf.keras.layers.Dense(120, activation='relu', kernel_regularizer=tf.keras.regularizers.l2(l=regular))(flatten)
-    fc2 = tf.keras.layers.Dense(84, activation='relu', kernel_regularizer=tf.keras.regularizers.l2(l=regular))(fc1)
-    fc3 = tf.keras.layers.Dense(10, activation='softmax', kernel_regularizer=tf.keras.regularizers.l2(l=regular))(fc2)
+    fc1_out = tf.keras.layers.Dropout(0.5)(fc1)
+    fc2 = tf.keras.layers.Dense(84, activation='relu', kernel_regularizer=tf.keras.regularizers.l2(l=regular))(fc1_out)
+    fc2_out = tf.keras.layers.Dropout(0.5)(fc2)
+    fc3 = tf.keras.layers.Dense(10, activation='softmax', kernel_regularizer=tf.keras.regularizers.l2(l=regular))(fc2_out)
     net = tf.keras.Model(inputs=inputs, outputs=fc3)
     return net
 

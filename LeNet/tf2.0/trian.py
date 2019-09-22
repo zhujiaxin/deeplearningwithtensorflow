@@ -3,12 +3,8 @@
 import tensorflow as tf
 import lenet
 import utils.read_mnist as read_mnist
-import datetime as datetime
 
-
-
-
-train_x, train_y, test_x, test_y = read_mnist.read_mnist(one_hot=True, z_score=True)
+train_x, train_y, test_x, test_y = read_mnist.read_mnist(one_hot=True, standard=True)
 
 model = lenet.model(regular=0)
 model.compile(optimizer=tf.keras.optimizers.SGD(),
