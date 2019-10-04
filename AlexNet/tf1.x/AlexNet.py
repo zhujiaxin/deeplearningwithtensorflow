@@ -26,7 +26,7 @@ class AlexNet(object):
             bias2 = tf.Variable(tf.constant(value=1, shape=[256], dtype=tf.float32), name='kernel_bias')
             conv2 = tf.nn.relu(tf.nn.bias_add(tf.nn.conv2d(maxpool1, kernel2, strides=[1, 1, 1, 1],
                                               padding='SAME'), bias2))
-        self.parameter.append([kernel2, conv2])
+        self.parameter.append([kernel2, bias2])
         with tf.name_scope('second_maxpool_layer'):
             maxpool2 = tf.nn.max_pool(conv2, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID')
 
@@ -60,7 +60,7 @@ class AlexNet(object):
                                   name='fc_weight', collections=[tf.GraphKeys.GLOBAL_VARIABLES, 'loss'])
             bias6 = tf.Variable(tf.constant(shape=[4096], value=1, dtype=tf.float32), name='fc_bias')
             fc1_out = tf.nn.relu(tf.nn.bias_add(tf.matmul(reshaped, weight1), bias6))
-            drop1 = tf.nn.dropout(fc1_out, 0.5)
+            drop1 = tf.nn.dropout(fc1_out, rate=0.5)
         self.parameter.append([weight1, bias6])
 
         with tf.name_scope('second_fc_layer'):
@@ -68,7 +68,7 @@ class AlexNet(object):
                                   name='fc_weight', collections=[tf.GraphKeys.GLOBAL_VARIABLES, 'loss'])
             bias7 = tf.Variable(tf.constant(shape=[4096], value=1, dtype=tf.float32), name='fc_bias')
             fc2_out = tf.nn.relu(tf.nn.bias_add(tf.matmul(drop1, weight2), bias7))
-            drop2 = tf.nn.dropout(fc2_out, 0.5)
+            drop2 = tf.nn.dropout(fc2_out, rate=0.5)
         self.parameter.append([weight2, bias7])
         with tf.name_scope('thrid_fc_layer'):
             weight3 = tf.Variable(tf.truncated_normal(shape=[4096, 1000], stddev=0.01), dtype=tf.float32,
@@ -110,7 +110,7 @@ class AlexNet(object):
 
 
 class AlexNet2(object):
-    def __init__(self, lr_rate=0.001, regular=0.005):
+    def __init__(self, lr_rate=0.001, regular=0.005, trainable=False):
         self.parameter = []
         with tf.name_scope('input_layer'):
             self.input_x = tf.placeholder(dtype=tf.float32, shape=[None, 227, 227, 3], name='input_x')
@@ -122,21 +122,23 @@ class AlexNet2(object):
             bias1_1 = tf.Variable(tf.constant(value=0, shape=[48], dtype=tf.float32), name='kernel_bias')
             conv1_1 = tf.nn.relu(tf.nn.bias_add(tf.nn.conv2d(self.input_x, kernel1_1, strides=[1, 4, 4, 1],
                                                              padding='VALID'), bias1_1))
+            lrn1_1 = tf.nn.local_response_normalization(conv1_1, depth_radius=2, bias=1, alpha=2e-05, beta=0.75)
         self.parameter.append([kernel1_1, bias1_1])
 
-        with tf.name_scope('fisrt_conv_laryer_part2'):
+        with tf.name_scope('fisrt_conv_layer_part2'):
             kernel1_2 = tf.Variable(tf.truncated_normal(shape=[11, 11, 3, 48], stddev=0.01, dtype=tf.float32),
                                     name='kernel_weight', collections=[tf.GraphKeys.GLOBAL_VARIABLES, 'loss'])
             bias1_2 = tf.Variable(tf.constant(value=0, shape=[48], dtype=tf.float32), name='kernel_bias')
             conv1_2 = tf.nn.relu(tf.nn.bias_add(tf.nn.conv2d(self.input_x, kernel1_2, strides=[1, 4, 4, 1],
                                                              padding='VALID'), bias1_2))
+            lrn1_2 = tf.nn.local_response_normalization(conv1_2, depth_radius=2, bias=1, alpha=2e-05, beta=0.75)
         self.parameter.append([kernel1_2, bias1_2])
 
         with tf.name_scope('first_maxpool_layer_part1'):
-            maxpool1_1 = tf.nn.max_pool(conv1_1, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID')
+            maxpool1_1 = tf.nn.max_pool(lrn1_1, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID')
 
         with tf.name_scope('fisrt_maxpool_layer_part2'):
-            maxpool1_2 = tf.nn.max_pool(conv1_2, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID')
+            maxpool1_2 = tf.nn.max_pool(lrn1_2, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID')
 
         with tf.name_scope('second_conv_layer_part1'):
             kernel2_1 = tf.Variable(tf.truncated_normal(shape=[5, 5, 48, 128], stddev=0.01, dtype=tf.float32),
@@ -144,6 +146,7 @@ class AlexNet2(object):
             bias2_1 = tf.Variable(tf.constant(value=1, shape=[128], dtype=tf.float32), name='kernel_bias')
             conv2_1 = tf.nn.relu(tf.nn.bias_add(tf.nn.conv2d(maxpool1_1, kernel2_1, strides=[1, 1, 1, 1],
                                                              padding='SAME'), bias2_1))
+            lrn2_1 = tf.nn.local_response_normalization(conv2_1, depth_radius=2, bias=1, alpha=2e-05, beta=0.75)
         self.parameter.append([kernel2_1, bias2_1])
 
         with tf.name_scope('second_conv_layer_part2'):
@@ -152,13 +155,14 @@ class AlexNet2(object):
             bias2_2 = tf.Variable(tf.constant(value=0, shape=[128], dtype=tf.float32), name='kernel_bias')
             conv2_2 = tf.nn.relu(tf.nn.bias_add(tf.nn.conv2d(maxpool1_2, kernel2_2, strides=[1, 1, 1, 1],
                                                              padding='SAME'), bias2_2))
+            lrn2_2 = tf.nn.local_response_normalization(conv2_2, depth_radius=2, bias=1, alpha=2e-05, beta=0.75)
         self.parameter.append([kernel2_2, bias2_2])
 
         with tf.name_scope('second_maxpool_layer_part1'):
-            maxpool2_1 = tf.nn.max_pool(conv2_1, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID')
+            maxpool2_1 = tf.nn.max_pool(lrn2_1, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID')
 
         with tf.name_scope('second_maxpool_layer_part2'):
-            maxpool2_2 = tf.nn.max_pool(conv2_2, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID')
+            maxpool2_2 = tf.nn.max_pool(lrn2_2, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID')
 
         '''in paper conv3 have four conv kernels so there have four,
            in many codes for alexnet they have only one kernel have shape=[3, 3, 256, 384]
@@ -235,21 +239,24 @@ class AlexNet2(object):
                                   name='fc_weight', collections=[tf.GraphKeys.GLOBAL_VARIABLES, 'loss'])
             bias6 = tf.Variable(tf.constant(shape=[4096], value=1, dtype=tf.float32), name='fc_bias')
             fc1_out = tf.nn.relu(tf.nn.bias_add(tf.matmul(reshaped, weight1), bias6))
-            drop1 = tf.nn.dropout(fc1_out, 0.5)
+            if trainable:
+                fc1_out = tf.nn.dropout(fc1_out, rate=0.5)
         self.parameter.append([weight1, bias6])
 
         with tf.name_scope('second_fc_layer'):
             weight2 = tf.Variable(tf.truncated_normal(shape=[4096, 4096], stddev=0.01, dtype=tf.float32),
                                   name='fc_weight', collections=[tf.GraphKeys.GLOBAL_VARIABLES, 'loss'])
             bias7 = tf.Variable(tf.constant(shape=[4096], value=1, dtype=tf.float32), name='fc_bias')
-            fc2_out = tf.nn.relu(tf.nn.bias_add(tf.matmul(drop1, weight2), bias7))
-            drop2 = tf.nn.dropout(fc2_out, 0.5)
+            fc2_out = tf.nn.relu(tf.nn.bias_add(tf.matmul(fc1_out, weight2), bias7))
+            if trainable:
+                fc2_out = tf.nn.dropout(fc2_out, rate=0.5)
         self.parameter.append([weight2, bias7])
+
         with tf.name_scope('thrid_fc_layer'):
             weight3 = tf.Variable(tf.truncated_normal(shape=[4096, 1000], stddev=0.01), dtype=tf.float32,
                                   name='fc_weight', collections=[tf.GraphKeys.GLOBAL_VARIABLES, 'loss'])
             bias8 = tf.Variable(tf.constant(shape=[1000], value=1, dtype=tf.float32), name='fc_bias')
-            self.out = tf.nn.softmax(tf.nn.bias_add(tf.matmul(drop2, weight3), bias8))
+            self.out = tf.nn.softmax(tf.nn.bias_add(tf.matmul(fc2_out, weight3), bias8))
         self.parameter.append([weight3, bias8])
         with tf.name_scope('loss'):
             regulation_loss = 0
