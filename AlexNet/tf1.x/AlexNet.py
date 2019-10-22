@@ -125,7 +125,7 @@ class AlexNet2(object):
             lrn1_1 = tf.nn.local_response_normalization(conv1_1, depth_radius=2, bias=1, alpha=2e-05, beta=0.75)
         self.parameter.append([kernel1_1, bias1_1])
 
-        with tf.name_scope('fisrt_conv_layer_part2'):
+        with tf.name_scope('first_conv_layer_part2'):
             kernel1_2 = tf.Variable(tf.truncated_normal(shape=[11, 11, 3, 48], stddev=0.01, dtype=tf.float32),
                                     name='kernel_weight', collections=[tf.GraphKeys.GLOBAL_VARIABLES, 'loss'])
             bias1_2 = tf.Variable(tf.constant(value=0, shape=[48], dtype=tf.float32), name='kernel_bias')

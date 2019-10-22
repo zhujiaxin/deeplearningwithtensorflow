@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d4ccacf-28a9-4e7b-854b-8b34a20c1598" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AlexNet/tf2.0/utils/costumelayers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deeplearningwithtensorflow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deeplearningwithtensorflow.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlexNet/tf2.0/assgin_weights&amp;biases.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlexNet/tf2.0/picture/laska.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlexNet/tf2.0/picture/poodle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AlexNet/tf2.0/utils/downloadmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexNet/tf1.x/AlexNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/AlexNet/tf1.x/AlexNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexNet/tf1.x/getmodeldata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexNet/tf1.x/load_weight&amp;biases.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AlexNet/tf1.x/load_weight&amp;biases.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexNet/tf1.x/use model to predict.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AlexNet/tf1.x/use model to predict.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexNet/tf2.0/AlexNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/AlexNet/tf2.0/AlexNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexNet/tf2.0/utils/costumelayers.py" beforeDir="false" afterPath="$PROJECT_DIR$/AlexNet/tf2.0/utils/costumelayers.py" afterDir="false" />
     </list>
+    <ignored path="D:\deeplearningwithtensorflow\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,43 +25,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/AlexNet/tf2.0/utils/costumelayers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="621">
+              <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AlexNet/tf2.0/utils/costumelayers.py">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AlexNet/tf2.0/AlexNet.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LeNet/tf2.0/trian.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-              <folding>
-                <element signature="e#24#47#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="405">
+              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -80,8 +68,12 @@
         <option value="$PROJECT_DIR$/LeNet/tf2.0/lenet.py" />
         <option value="$PROJECT_DIR$/LeNet/README.md" />
         <option value="$PROJECT_DIR$/LeNet/tf1.x/train.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/AlexNet/tf1.x/mytest.py" />
+        <option value="$PROJECT_DIR$/AlexNet/tf2.0/mytest.py" />
+        <option value="$PROJECT_DIR$/AlexNet/tf2.0/AlexNet.py" />
+        <option value="$PROJECT_DIR$/AlexNet/tf1.x/AlexNet.py" />
         <option value="$PROJECT_DIR$/AlexNet/tf2.0/utils/costumelayers.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -112,12 +104,14 @@
               <item name="deeplearningwithtensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="deeplearningwithtensorflow" type="462c0819:PsiDirectoryNode" />
               <item name="AlexNet" type="462c0819:PsiDirectoryNode" />
-              <item name="tf2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="tf1.x" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="deeplearningwithtensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="deeplearningwithtensorflow" type="462c0819:PsiDirectoryNode" />
-              <item name="vgg" type="462c0819:PsiDirectoryNode" />
+              <item name="AlexNet" type="462c0819:PsiDirectoryNode" />
+              <item name="tf1.x" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -128,8 +122,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AlexNet/tf1.x" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AlexNet/tf2.0" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\deeplearningwithtensorflow\AlexNet\tf2.0" />
+      <recent name="D:\deeplearningwithtensorflow\AlexNet\tf2.0\utils" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -143,8 +143,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train">
-    <configuration name="getmodeldata" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.costumelayers">
+    <configuration name="AlexNet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="deeplearningwithtensorflow" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,11 +152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AlexNet/tf1.x" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AlexNet/tf2.0" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AlexNet/tf1.x/getmodeldata.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AlexNet/tf2.0/AlexNet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,7 +165,49 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tf1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="costumelayers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="deeplearningwithtensorflow" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AlexNet/tf2.0/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AlexNet/tf2.0/utils/costumelayers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mytest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="deeplearningwithtensorflow" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AlexNet/tf2.0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AlexNet/tf2.0/mytest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mytest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="deeplearningwithtensorflow" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -177,7 +219,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AlexNet/tf1.x/downloadmodel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AlexNet/tf1.x/mytest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -230,14 +272,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.tf1" />
-      <item itemvalue="Python.getmodeldata" />
+      <item itemvalue="Python.AlexNet" />
+      <item itemvalue="Python.costumelayers" />
+      <item itemvalue="Python.mytest (1)" />
+      <item itemvalue="Python.mytest" />
       <item itemvalue="Python.train" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.costumelayers" />
+        <item itemvalue="Python.AlexNet" />
+        <item itemvalue="Python.mytest (1)" />
+        <item itemvalue="Python.mytest" />
         <item itemvalue="Python.train" />
-        <item itemvalue="Python.getmodeldata" />
-        <item itemvalue="Python.tf1" />
       </list>
     </recent_temporary>
   </component>
@@ -315,26 +362,32 @@
       <option name="project" value="LOCAL" />
       <updated>1570543484877</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add tf2 costume conv2d layers">
+      <created>1570545064559</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1570545064559</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34610304" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25711274" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4980185" visible="true" weight="0.43342775" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49736565" weight="0.38720173" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49867898" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.497358" visible="true" weight="0.33427763" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50264204" side_tool="true" visible="true" weight="0.33427763" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49867898" weight="0.3275488" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49683878" weight="0.3340564" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50263435" side_tool="true" weight="0.5542299" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -367,6 +420,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" modify lenet model &#10; add Train parameter&#10; add restore model.ipynb to restore model" />
@@ -375,34 +442,38 @@
     <MESSAGE value="add train model code use jupyter notebook&#10;and upload parameter file" />
     <MESSAGE value="update readme" />
     <MESSAGE value="remove logfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove logfile" />
+    <MESSAGE value="add tf2 costume conv2d layers" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tf2 costume conv2d layers" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="a.weight" language="Python" />
+        <watch expression="a.variables" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>a.variables</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>a.variable</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>a.weight</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/AlexNet/tf1.x/downloadmodel.py" />
-    <entry file="file://$PROJECT_DIR$/AlexNet/tf1.x/getmodeldata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AlexNet/tf1.x/utils/downloadmodel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AlexNet/tf1.x/AlexNet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="e#23#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../anaconda/envs/tensorflow1.14/Lib/site-packages/tensorflow/python/framework/ops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -410,13 +481,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LeNet/tf1.x/ckpt/checkpoint">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LeNet/tf1.x/ckpt/checkpoint" />
     <entry file="file://$PROJECT_DIR$/../anaconda/envs/tensorflow1.14/Lib/site-packages/tensorflow/python/training/optimizer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -496,9 +561,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../anaconda/envs/tensorflow2/Lib/site-packages/tensorflow/python/ops/math_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="2462" column="29" lean-forward="true" selection-start-line="2462" selection-start-column="29" selection-end-line="2462" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../anaconda/envs/tensorflow2/Lib/site-packages/tensorflow_core/python/ops/variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="256" selection-start-line="256" selection-end-line="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../anaconda/envs/tensorflow2/Lib/site-packages/tensorflow_core/python/ops/gen_nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="754" selection-start-line="754" selection-end-line="754" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlexNet/tf1.x/getmodeldata.py" />
+    <entry file="file://$PROJECT_DIR$/../anaconda/envs/tensorflow2/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7182">
+          <caret line="266" selection-start-line="266" selection-end-line="266" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LeNet/tf2.0/trian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
+        <state relative-caret-position="1134">
           <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
           <folding>
             <element signature="e#24#47#0" expanded="true" />
@@ -506,27 +600,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/AlexNet/tf1.x/utils/downloadmodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="594">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../anaconda/envs/tensorflow2/Lib/site-packages/numpy/lib/npyio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="292" column="26" selection-start-line="291" selection-start-column="15" selection-end-line="292" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlexNet/tf1.x/mytest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../anaconda/envs/tensorflow2/Lib/site-packages/tensorflow/python/ops/array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="1499" column="24" selection-start-line="1499" selection-start-column="6" selection-end-line="1499" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlexNet/tf2.0/utils/downloadmodel.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlexNet/tf2.0/mytest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AlexNet/tf2.0/AlexNet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+        <state relative-caret-position="576">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#23#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlexNet/tf1.x/AlexNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="120" column="55" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="55" />
+          <folding>
+            <element signature="e#23#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AlexNet/tf2.0/utils/costumelayers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="621">
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
